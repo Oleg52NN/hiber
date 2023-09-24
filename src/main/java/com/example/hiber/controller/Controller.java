@@ -19,17 +19,20 @@ public class Controller {
         private Repository repository;
 
         @GetMapping("/persons/by-city")
-        public List<Person> getPersonsByCity(@RequestParam String city) {
-            return repository.getPersonsByCity(city);
+        public List<Person> findByCityAll(@RequestParam String city) {
+            return repository.findByCity(city);
         }
+
         @GetMapping("/persons/by-age")
-        public List<Person> getPersonsByAge(@RequestParam int age) {
+        public List<Person> findByAge(@RequestParam int age) {
             return repository.getPersonsByAge(age);
         }
+
         @GetMapping("/persons/by-name&surname")
         public Optional<Person> getPersonsByNameAndSurname(@RequestParam String name, @RequestParam String surname) {
             return repository.getPersonsByNameAndSurname(name, surname);
         }
+
 
     }
 

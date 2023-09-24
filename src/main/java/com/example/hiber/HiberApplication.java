@@ -20,7 +20,6 @@ public class HiberApplication implements CommandLineRunner {
     @Transactional
     @Override
     public void run(String... args) throws Exception {
-//    personRepository.findAll().forEach(System.out::println);
-//    personRepository.findAll(PageRequest.of(0, 2)).forEach(System.out::println);
+
     }
 }
