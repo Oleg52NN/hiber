@@ -1,10 +1,12 @@
 package com.example.hiber.repository;
 
 import com.example.hiber.personData.Person;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
+//import jakarta.persistence.EntityManager;
+//import jakarta.persistence.PersistenceContext;
 import lombok.AllArgsConstructor;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import java.util.List;
 import java.util.Optional;
 
